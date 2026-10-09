@@ -1,0 +1,71 @@
+pair_id,x,y,name,category,source,val,value_known,time,shape,size,val_display,time_display,highlight,color_key
+P1,Instrument,-1,SAFE,procurement,EU,150,TRUE,2025-2030,instrument,150,€150 bn,2025-2030,highlight,EU
+P10,Instrument,-6,EDIP,external assistance,EU,1.5,TRUE,2026-27,instrument,1.5,€1.5 bn,2026-27,dim,dim
+P11,Instrument,-7,EPF,external assistance,EU,17,TRUE,2021-27,instrument,17,€17 bn,2021-27,dim,dim
+P12,Instrument,-8,CEF,infrastructure and logistics,EU,1.7,TRUE,2021-27,instrument,1.7,€1.7 bn,2021-27,dim,dim
+P13,Instrument,-9,EIC,R&D,EU,0.734,TRUE,2026,instrument,0.734,€0.734 bn,2026,dim,dim
+P14,Instrument,-10,Cohesion Funds,R&D,EU,11.9,TRUE,2021-27,instrument,11.9,€11.9 bn,2021-27,dim,dim
+P15,Instrument,-10,Cohesion Funds,industrial production,EU,11.9,TRUE,2021-27,instrument,11.9,€11.9 bn,2021-27,dim,dim
+P16,Instrument,-10,Cohesion Funds,infrastructure and logistics,EU,11.9,TRUE,2021-27,instrument,11.9,€11.9 bn,2021-27,dim,dim
+P17,Instrument,-11,EIB,R&D,EU,4.5,TRUE,2025,instrument,4.5,€4.5 bn,2025,dim,dim
+P18,Instrument,-11,EIB,infrastructure and logistics,EU,4.5,TRUE,2025,instrument,4.5,€4.5 bn,2025,dim,dim
+P19,Instrument,-11,EIB,industrial production,EU,4.5,TRUE,2025,instrument,4.5,€4.5 bn,2025,dim,dim
+P2,Instrument,-1,SAFE,infrastructure and logistics,EU,150,TRUE,2025-2030,instrument,150,€150 bn,2025-2030,highlight,EU
+P3,Instrument,-2,Ukraine Support loan,external assistance,EU,90,TRUE,2026-2027,instrument,90,€90 bn,2026-2027,dim,dim
+P34,Instrument,-16,NATO Innovation Fund,R&D,NATO,1,TRUE,2023-2038,instrument,1,€1 bn,2023-2038,dim,dim
+P35,Instrument,-17,NATO DIANA,R&D,NATO,0.011,TRUE,2025,instrument,0.011,€0.011 bn,2025,dim,dim
+P4,Instrument,-3,EDF,R&D,EU,7.3,TRUE,2021-27,instrument,7.3,€7.3 bn,2021-27,dim,dim
+P5,Instrument,-4,ASAP,industrial production,EU,0.5,TRUE,2023-25,instrument,0.5,€0.5 bn,2023-25,dim,dim
+P6,Instrument,-5,EDIRPA,procurement,EU,0.31,TRUE,2023-25,instrument,0.31,€0.31 bn,2023-25,dim,dim
+P7,Instrument,-6,EDIP,industrial production,EU,1.5,TRUE,2026-27,instrument,1.5,€1.5 bn,2026-27,dim,dim
+P8,Instrument,-6,EDIP,procurement,EU,1.5,TRUE,2026-27,instrument,1.5,€1.5 bn,2026-27,dim,dim
+P9,Instrument,-6,EDIP,R&D,EU,1.5,TRUE,2026-27,instrument,1.5,€1.5 bn,2026-27,dim,dim
+P1,Category,-3,procurement,procurement,EU,150,TRUE,NA,category,2,,,highlight,EU
+P10,Category,-9,external assistance,external assistance,EU,1.5,TRUE,NA,category,2,,,dim,dim
+P11,Category,-9,external assistance,external assistance,EU,17,TRUE,NA,category,2,,,dim,dim
+P12,Category,-6,infrastructure and logistics,infrastructure and logistics,EU,1.7,TRUE,NA,category,2,,,dim,dim
+P13,Category,-12,R&D,R&D,EU,0.734,TRUE,NA,category,2,,,dim,dim
+P14,Category,-12,R&D,R&D,EU,11.9,TRUE,NA,category,2,,,dim,dim
+P15,Category,-15,industrial production,industrial production,EU,11.9,TRUE,NA,category,2,,,dim,dim
+P16,Category,-6,infrastructure and logistics,infrastructure and logistics,EU,11.9,TRUE,NA,category,2,,,dim,dim
+P17,Category,-12,R&D,R&D,EU,4.5,TRUE,NA,category,2,,,dim,dim
+P18,Category,-6,infrastructure and logistics,infrastructure and logistics,EU,4.5,TRUE,NA,category,2,,,dim,dim
+P19,Category,-15,industrial production,industrial production,EU,4.5,TRUE,NA,category,2,,,dim,dim
+P2,Category,-6,infrastructure and logistics,infrastructure and logistics,EU,150,TRUE,NA,category,2,,,highlight,EU
+P20,Category,-12,R&D,R&D,MSs,NA,FALSE,NA,category,2,,,dim,dim
+P21,Category,-15,industrial production,industrial production,MSs,NA,FALSE,NA,category,2,,,dim,dim
+P22,Category,-3,procurement,procurement,MSs,NA,FALSE,NA,category,2,,,dim,dim
+P23,Category,-6,infrastructure and logistics,infrastructure and logistics,MSs,NA,FALSE,NA,category,2,,,dim,dim
+P24,Category,-15,industrial production,industrial production,Multilateral/intergovernmental,NA,FALSE,NA,category,2,,,dim,dim
+P25,Category,-12,R&D,R&D,Multilateral/intergovernmental,NA,FALSE,NA,category,2,,,dim,dim
+P26,Category,-3,procurement,procurement,Multilateral/intergovernmental,NA,FALSE,NA,category,2,,,dim,dim
+P27,Category,-15,industrial production,industrial production,Multilateral/intergovernmental,NA,FALSE,NA,category,2,,,dim,dim
+P28,Category,-3,procurement,procurement,Multilateral/intergovernmental,NA,FALSE,NA,category,2,,,dim,dim
+P29,Category,-6,infrastructure and logistics,infrastructure and logistics,Multilateral/intergovernmental,NA,FALSE,NA,category,2,,,dim,dim
+P3,Category,-9,external assistance,external assistance,EU,90,TRUE,NA,category,2,,,dim,dim
+P30,Category,-9,external assistance,external assistance,Multilateral/intergovernmental,NA,FALSE,NA,category,2,,,dim,dim
+P31,Category,-12,R&D,R&D,Multilateral/intergovernmental,NA,FALSE,NA,category,2,,,dim,dim
+P32,Category,-12,R&D,R&D,Private funding,NA,FALSE,NA,category,2,,,dim,dim
+P33,Category,-15,industrial production,industrial production,Private funding,NA,FALSE,NA,category,2,,,dim,dim
+P34,Category,-12,R&D,R&D,NATO,1,TRUE,NA,category,2,,,dim,dim
+P35,Category,-12,R&D,R&D,NATO,0.011,TRUE,NA,category,2,,,dim,dim
+P4,Category,-12,R&D,R&D,EU,7.3,TRUE,NA,category,2,,,dim,dim
+P5,Category,-15,industrial production,industrial production,EU,0.5,TRUE,NA,category,2,,,dim,dim
+P6,Category,-3,procurement,procurement,EU,0.31,TRUE,NA,category,2,,,dim,dim
+P7,Category,-15,industrial production,industrial production,EU,1.5,TRUE,NA,category,2,,,dim,dim
+P8,Category,-3,procurement,procurement,EU,1.5,TRUE,NA,category,2,,,dim,dim
+P9,Category,-12,R&D,R&D,EU,1.5,TRUE,NA,category,2,,,dim,dim
+P20,Instrument,-12,National public institutions,R&D,MSs,NA,FALSE,NA,instrument (value unknown),2,Amount not yet specified,,dim,dim
+P21,Instrument,-12,National public institutions,industrial production,MSs,NA,FALSE,NA,instrument (value unknown),2,Amount not yet specified,,dim,dim
+P22,Instrument,-12,National public institutions,procurement,MSs,NA,FALSE,NA,instrument (value unknown),2,Amount not yet specified,,dim,dim
+P23,Instrument,-12,National public institutions,infrastructure and logistics,MSs,NA,FALSE,NA,instrument (value unknown),2,Amount not yet specified,,dim,dim
+P24,Instrument,-13,MDM,industrial production,Multilateral/intergovernmental,NA,FALSE,NA,instrument (value unknown),2,Amount not yet specified,,dim,dim
+P25,Instrument,-13,MDM,R&D,Multilateral/intergovernmental,NA,FALSE,NA,instrument (value unknown),2,Amount not yet specified,,dim,dim
+P26,Instrument,-13,MDM,procurement,Multilateral/intergovernmental,NA,FALSE,NA,instrument (value unknown),2,Amount not yet specified,,dim,dim
+P27,Instrument,-14,DSRB,industrial production,Multilateral/intergovernmental,NA,FALSE,NA,instrument (value unknown),2,Amount not yet specified,,dim,dim
+P28,Instrument,-14,DSRB,procurement,Multilateral/intergovernmental,NA,FALSE,NA,instrument (value unknown),2,Amount not yet specified,,dim,dim
+P29,Instrument,-14,DSRB,infrastructure and logistics,Multilateral/intergovernmental,NA,FALSE,NA,instrument (value unknown),2,Amount not yet specified,,dim,dim
+P30,Instrument,-14,DSRB,external assistance,Multilateral/intergovernmental,NA,FALSE,NA,instrument (value unknown),2,Amount not yet specified,,dim,dim
+P31,Instrument,-14,DSRB,R&D,Multilateral/intergovernmental,NA,FALSE,NA,instrument (value unknown),2,Amount not yet specified,,dim,dim
+P32,Instrument,-15,Private funding,R&D,Private funding,NA,FALSE,NA,instrument (value unknown),2,Amount not yet specified,,dim,dim
+P33,Instrument,-15,Private funding,industrial production,Private funding,NA,FALSE,NA,instrument (value unknown),2,Amount not yet specified,,dim,dim

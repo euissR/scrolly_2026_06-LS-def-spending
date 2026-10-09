@@ -1,0 +1,27 @@
+/* Article styling from index.html, scoped for Drupal. */
+.financing-article h2,.financing-article h3 { color:#1d1d1b; font-family:'PT Sans',Arial,sans-serif; font-weight:700; }
+.financing-article h2 { font-size:1.6rem; }
+.financing-article h3 { font-size:1.15rem; margin-top:2rem; }
+.financing-article .hl-fuchsia { background:#df3144; color:#fff; }
+.financing-article .hl-teal { background:#309ebe; color:#fff; }
+.financing-article .hl-egg { background:#ffde75; color:#000; }
+.financing-article .hl-teal2 { background:#376882; color:#fff; }
+.financing-article .hl-teal3 { background:#1d3956; color:#fff; }
+.financing-article .hl3 { background:#33163a; color:#fff; }
+.financing-article .bold-teal { color:#309ebe; font-weight:700; }
+.financing-article .bold-grey { color:#595959; font-weight:700; }
+/* The national-spending and private-capital charts retain their original embeds. */
+.financing-article .scrolly-stage { display:flex; align-items:flex-start; gap:2rem; margin:0 auto; position:relative; }
+.financing-article .scrolly-viz { position:sticky; top:5vh; width:50%; height:90vh; margin:0; order:2; }
+.financing-article .scrolly-viz iframe { width:100%; height:90vh; border:0; }
+.financing-article .steps { width:50%; position:relative; padding-top:20vh; order:1; }
+.financing-article .steps p { max-width:40ch; margin:0 auto 90vh; background:#ffffffe6; padding:1.25em; border-radius:10px; }
+.financing-article .space { height:10vh; }
+.financing-article .half-right-float { float:right; width:50%; margin-left:1rem; }
+@media(max-width:768px) {
+ .financing-article .scrolly-stage { display:block; }
+ .financing-article .scrolly-viz { width:100%; }
+ .financing-article .steps { width:100%; margin-top:-80vh; }
+ .financing-article .steps p { position:relative; max-width:90%; }
+ .financing-article .half-right-float { float:none; width:100%; margin-left:0; }
+}

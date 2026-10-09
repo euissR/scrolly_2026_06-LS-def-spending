@@ -22,7 +22,8 @@ D3 and Google Fonts use external CDNs; fonts have local fallbacks.
 - Amounts use `val_display`; periods use `time_display`. A missing amount is never converted to zero.
 - NATO Innovation Fund and NATO DIANA amounts are explicitly suppressed by `UNQUANTIFIED` in `js/config.js`, as requested. Their supplied periods remain visible. Remove those overrides to display the supplied amounts in a later version.
 - The revised CSV already uses DSRB. ESRB is also accepted as an alias.
-- Dots show category coverage, not money allocated to a category. The timeline shows the period associated with the figure, not annual disbursements. A single-year period gets a dot; a range includes its final year. All sections share the 2021–2038 year axis.
+- Teal circle area represents funding amounts on a common €150bn scale across all sections. Radius uses a square-root scale with no minimum size. Exact amounts remain labelled; instruments without quantified amounts have no circle.
+- Dots in the category columns show coverage, not money allocated to a category. The subdued grey timeline shows the period associated with the figure, not annual disbursements. A single-year period gets a small grey marker; a range gets a thin line and end caps, including its final year. All sections share the 2021–2038 year axis.
 - Original article prose is preserved. The EIB prose says “over €4 billion” while the chart reports the dataset's €4.5bn. No financing types or annualisation have been inferred.
 - Every original financing paragraph retains its step. The three paragraphs sharing Flourish slide 10 now independently highlight EDIRPA, SAFE and EDIP.
 
@@ -31,6 +32,8 @@ D3 and Google Fonts use external CDNs; fonts have local fallbacks.
 The architecture follows the attached modules: `main.js` loads data and wires the scroll engine; `steps.js` defines highlights; `coverageMatrix.js` exposes `update(state)`; `theme.js` supplies the existing palette.
 
 Native HTML tables keep text readable and expose row/column headers to assistive technology. D3 binds the data, renders the timelines and changes highlights. Buttons support keyboard interaction. Reduced motion is respected. A static data table remains if the interactive module fails or JavaScript is disabled.
+
+Narrative steps follow the attached CSS's plain-text treatment: no decorative border, coloured background or shadow. Inactive steps use 0.25 opacity and the active step uses full opacity.
 
 Below 1000px, the chart sits above the narrative; its table scrolls locally. On wider screens, narrative and chart sit alongside each other. Styles are scoped and sizing follows the available container, without a `100vw` breakout. This avoids introducing CMS overflow; full bleed still requires a Drupal parent layout that permits it. A sticky ancestor with `overflow: hidden/auto` may require a CMS theme adjustment.
 

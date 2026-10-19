@@ -1,5 +1,5 @@
 export const categories = ['R&D', 'industrial production', 'procurement', 'infrastructure and logistics', 'external assistance'];
-export const order = ['SAFE', 'Ukraine Support loan', 'EDF', 'ASAP', 'EDIRPA', 'EDIP', 'EPF', 'CEF', 'EIC', 'Cohesion Funds', 'EIB', 'National public institutions', 'MDM', 'DSRB', 'Private funding', 'NATO Innovation Fund', 'NATO DIANA'];
+export const order = ['SAFE', 'Ukraine Support loan', 'EDF', 'ASAP', 'EDIRPA', 'AGILE', 'EDIP', 'EPF', 'CEF', 'EIC', 'Cohesion Funds', 'EIB', 'National public institutions', 'MDM', 'DSRB', 'Private funding', 'NATO Innovation Fund', 'NATO DIANA'];
 
 export function parsePeriod(value) {
   const match = String(value).trim().match(/^(\d{4})(?:\s*[-–]\s*(\d{2}|\d{4}))?$/);

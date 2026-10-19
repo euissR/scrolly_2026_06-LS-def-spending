@@ -1,7 +1,7 @@
 /* All production selectors are scoped to these financing sections. */
 .fm-scrolly { --fm-ink:#1d1d1b; --fm-teal:#309ebe; position:relative; display:grid; grid-template-columns:minmax(0,29fr) minmax(0,71fr); gap:1.5rem; margin:2.5rem 0 4rem; max-width:100%; align-items:start; }
 .fm-scrolly * { box-sizing:border-box; }
-.fm-scrolly .fm-stage { position:sticky; top:1.5rem; min-width:0; padding:1rem; background:#fff; border-top:3px solid #309ebe; font-family:'PT Sans Narrow','Arial Narrow',Arial,sans-serif; color:var(--fm-ink); grid-column:2; grid-row:1; }
+.fm-scrolly .fm-stage { position:sticky; top:1.5rem; min-width:0; padding:1rem; background:#fff; font-family:'PT Sans Narrow','Arial Narrow',Arial,sans-serif; color:var(--fm-ink); grid-column:2; grid-row:1; }
 .fm-scrolly .fm-steps { grid-column:1; grid-row:1; min-width:0; padding:25vh 0 35vh; }
 .fm-scrolly .fm-step { margin:0 0 65vh; font-size:1rem; line-height:1.55; padding:0; border:0; border-radius:0; background:transparent; box-shadow:none; transition:opacity .3s; }
 .fm-scrolly.fm-ready .fm-step { opacity:.25; }
@@ -16,7 +16,9 @@
 .fm-scrolly button:focus-visible,.fm-scrolly .fm-table-scroll:focus-visible { outline:3px solid #f28d22; outline-offset:2px; }
 .fm-scrolly .fm-table-scroll { overflow:auto; max-height:62vh; border:1px solid #e5e8ea; scrollbar-width:thin; }
 .fm-scrolly .fm-table { border-collapse:separate; border-spacing:0; width:100%; min-width:650px; table-layout:fixed; font-size:.85rem; line-height:1.2; }
+.fm-scrolly .fm-table tbody { line-height:1.08; }
 .fm-scrolly .fm-table th,.fm-scrolly .fm-table td { padding:.5rem .25rem; border-bottom:1px solid #e5e8ea; vertical-align:middle; text-align:left; }
+.fm-scrolly .fm-table tbody th,.fm-scrolly .fm-table tbody td { padding-block:.406125rem; }
 .fm-scrolly .fm-table thead th { position:sticky; top:0; z-index:2; background:#f4f7f8; font-weight:700; height:78px; }
 .fm-scrolly .fm-table th:nth-child(1) { width:124px; }
 .fm-scrolly .fm-table th:nth-child(2) { width:131px; }
@@ -37,28 +39,46 @@
 .fm-scrolly .fm-period { color:#646363; font-size:.75rem; }
 .fm-scrolly .fm-period svg { display:block; max-width:100%; }
 .fm-scrolly .fm-period small { margin-top:0; color:#7d858a; }
-.fm-scrolly .fm-table thead th:nth-child(3) { color:#7d858a; font-weight:400; }
-.fm-scrolly .fm-table thead th:nth-child(3) svg { color:#a7afb3; }
-.fm-scrolly .fm-amount { display:flex; align-items:center; gap:.25rem; min-height:46px; }
-.fm-scrolly .fm-funding-symbol { display:block; flex:0 0 46px; }
+.fm-scrolly .fm-amount { display:flex; align-items:center; gap:.25rem; min-height:37.3635px; }
+.fm-scrolly .fm-funding-symbol { display:block; width:37.3635px; height:37.3635px; flex:0 0 37.3635px; }
 .fm-scrolly .fm-amount strong { color:#113655; font-size:.95rem; font-variant-numeric:tabular-nums; }
 .fm-scrolly .fm-note { font-size:.8rem; color:#646363; line-height:1.4; margin:.7rem 0 0; }
 .fm-scrolly .fm-sr { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap; }
+@media(min-width:1001px) {
+ .fm-scrolly .fm-stage { top:5vh; height:90vh; display:flex; flex-direction:column; justify-content:center; }
+}
 @media(max-width:1000px) {
  .fm-scrolly { display:block; }
- .fm-scrolly .fm-stage { top:0; z-index:3; box-shadow:0 4px 12px #11365512; }
- .fm-scrolly .fm-table-scroll { max-height:30vh; }
- .fm-scrolly .fm-steps { padding:10vh 0 20vh; }
- .fm-scrolly .fm-step { max-width:42rem; margin:0 auto 55vh; font-size:1rem; }
+ .fm-scrolly .fm-stage { top:0; z-index:1; box-shadow:0 4px 12px #11365512; }
+ .fm-scrolly .fm-table-scroll { max-height:none; }
+ .fm-scrolly .fm-steps { position:relative; z-index:2; pointer-events:none; padding:10vh 0 20vh; }
+ .fm-scrolly .fm-step { position:relative; z-index:2; pointer-events:auto; max-width:42rem; margin:0 auto 55vh; padding:.65rem; background:rgba(255,255,255,.96); box-shadow:0 2px 10px #11365518; font-size:1rem; }
  .fm-scrolly .fm-note { font-size:.7rem; }
 }
 @media(max-width:600px) {
- .fm-scrolly .fm-stage { padding:.6rem; }
+ .fm-scrolly .fm-stage { width:calc(100% + 2rem); margin-left:-1rem; height:90vh; height:90svh; padding:.5rem; display:flex; flex-direction:column; z-index:1; }
+ .fm-scrolly .fm-steps { position:relative; z-index:2; pointer-events:none; }
+ .fm-scrolly .fm-step { position:relative; z-index:2; pointer-events:auto; padding:.65rem; background:rgba(255,255,255,.96); box-shadow:0 2px 10px #11365518; }
  .fm-scrolly .fm-head h4 { font-size:1.2rem; }
  .fm-scrolly .fm-head p { font-size:.8rem; }
- .fm-scrolly .fm-focus { font-size:.9rem; padding:.4rem; margin:.4rem 0; min-height:0; }
- .fm-scrolly .fm-controls { margin-bottom:.4rem; font-size:.75rem; }
- .fm-scrolly .fm-table-scroll { max-height:25vh; }
- .fm-scrolly .fm-note { margin-top:.4rem; }
+ .fm-scrolly .fm-focus { font-size:.8rem; line-height:1.2; padding:.3rem; margin:.3rem 0; min-height:0; }
+ .fm-scrolly .fm-controls { margin-bottom:.25rem; font-size:.7rem; }
+ .fm-scrolly .fm-table-scroll { flex:1 1 auto; min-height:0; max-height:none; overflow-x:hidden; overflow-y:hidden; }
+ .fm-scrolly .fm-table { min-width:0; font-size:.7rem; line-height:1.15; }
+ .fm-scrolly .fm-table tbody { line-height:1.035; }
+ .fm-scrolly .fm-table th,.fm-scrolly .fm-table td { padding:.2rem .1rem; overflow-wrap:anywhere; }
+ .fm-scrolly .fm-table tbody th,.fm-scrolly .fm-table tbody td { padding-block:.16245rem; }
+ .fm-scrolly .fm-table thead th { height:58px; }
+ .fm-scrolly .fm-table th:nth-child(1) { width:82px; }
+ .fm-scrolly .fm-table th:nth-child(2) { width:82px; }
+ .fm-scrolly .fm-table th:nth-child(3) { width:70px; }
+ .fm-scrolly .fm-category button { padding:.1rem 0; font-size:.62rem; }
+ .fm-scrolly .fm-table small { font-size:.62rem; margin-top:.08rem; }
+ .fm-scrolly .fm-period { font-size:.62rem; }
+ .fm-scrolly .fm-period svg { height:16px; }
+ .fm-scrolly .fm-amount { min-height:17.8695px; gap:.08rem; }
+ .fm-scrolly .fm-funding-symbol { width:17.05725px; height:17.05725px; flex-basis:17.05725px; }
+ .fm-scrolly .fm-amount strong { font-size:.68rem; }
+ .fm-scrolly .fm-note { font-size:.62rem; line-height:1.2; margin-top:.3rem; }
 }
 @media(prefers-reduced-motion:reduce) { .fm-scrolly .fm-step,.fm-scrolly .fm-table tbody tr { transition:none; } }

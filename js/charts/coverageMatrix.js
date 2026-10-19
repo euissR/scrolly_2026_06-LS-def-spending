@@ -20,9 +20,7 @@ export function makeCoverageMatrix(el, { rows, id }) {
   const heads = table.select('thead').append('tr');
   heads.append('th').attr('scope','col').text('Instrument');
   heads.append('th').attr('scope','col').text('Funding (€ bn)');
-  const periodHead = heads.append('th').attr('scope','col').text('Period');
-  const axis = periodHead.append('svg').attr('viewBox','0 0 112 27').attr('width',112).attr('height',27).attr('aria-hidden','true');
-  axis.append('g').attr('transform','translate(0,3)').call(d3.axisBottom(time).tickValues([2021,2030,2038]).tickFormat(d3.format('d')).tickSize(3));
+  heads.append('th').attr('scope','col').text('Period');
   heads.selectAll('th.fm-category').data(categories).join('th').attr('scope','col').attr('class','fm-category').append('button').attr('type','button').attr('aria-pressed','false').text(c=>label[c]).on('click', (event,c) => {selectedCategory = selectedCategory === c ? null : c; renderState();});
   const tr = table.select('tbody').selectAll('tr').data(rows,d=>d.name).join('tr').style('--fm-source',d=>sourceColors[d.source] || theme.grey);
   const names = tr.append('th').attr('scope','row');

@@ -18,8 +18,8 @@
 .fm-scrolly .fm-table { border-collapse:separate; border-spacing:0; width:100%; min-width:650px; table-layout:fixed; font-size:.85rem; line-height:1.2; }
 .fm-scrolly .fm-table tbody { line-height:1.08; }
 .fm-scrolly .fm-table th,.fm-scrolly .fm-table td { padding:.5rem .25rem; border-bottom:1px solid #e5e8ea; vertical-align:middle; text-align:left; }
-.fm-scrolly .fm-table tbody th,.fm-scrolly .fm-table tbody td { padding-block:.406125rem; }
-.fm-scrolly .fm-table thead th { position:sticky; top:0; z-index:2; background:#f4f7f8; font-weight:700; height:78px; }
+.fm-scrolly .fm-table tbody th,.fm-scrolly .fm-table tbody td { padding-block:.425rem; }
+.fm-scrolly .fm-table thead th { position:sticky; top:0; z-index:2; background:#f4f7f8; font-size:12px; font-weight:400; height:78px; }
 .fm-scrolly .fm-table th:nth-child(1) { width:124px; }
 .fm-scrolly .fm-table th:nth-child(2) { width:131px; }
 .fm-scrolly .fm-table th:nth-child(3) { width:116px; }
@@ -67,7 +67,7 @@
  .fm-scrolly .fm-table { min-width:0; font-size:.7rem; line-height:1.15; }
  .fm-scrolly .fm-table tbody { line-height:1.035; }
  .fm-scrolly .fm-table th,.fm-scrolly .fm-table td { padding:.2rem .1rem; overflow-wrap:anywhere; }
- .fm-scrolly .fm-table tbody th,.fm-scrolly .fm-table tbody td { padding-block:.16245rem; }
+ .fm-scrolly .fm-table tbody th,.fm-scrolly .fm-table tbody td { padding-block:.17rem; }
  .fm-scrolly .fm-table thead th { height:58px; }
  .fm-scrolly .fm-table th:nth-child(1) { width:82px; }
  .fm-scrolly .fm-table th:nth-child(2) { width:82px; }
@@ -88,7 +88,10 @@
 .financing-article .fm-scrolly .fm-table tr { display:table-row!important; color:var(--fm-ink)!important; background:transparent!important; }
 .financing-article .fm-scrolly .fm-table th,
 .financing-article .fm-scrolly .fm-table td { display:table-cell!important; padding:.5rem .25rem!important; border:0!important; border-bottom:1px solid #e5e8ea!important; color:inherit!important; background:#fff!important; font-family:inherit!important; font-size:inherit!important; line-height:inherit!important; text-align:left!important; text-transform:none!important; vertical-align:middle!important; }
-.financing-article .fm-scrolly .fm-table thead th { position:sticky!important; top:0!important; z-index:2!important; height:78px!important; background:#f4f7f8!important; font-weight:700!important; }
+.financing-article .fm-scrolly .fm-table tbody th,
+.financing-article .fm-scrolly .fm-table tbody td { padding-block:.425rem!important; }
+.financing-article .fm-scrolly .fm-table thead th { position:sticky!important; top:0!important; z-index:2!important; height:78px!important; background:#f4f7f8!important; font-size:12px!important; font-weight:400!important; }
+.financing-article .fm-scrolly .fm-table thead .fm-category button { font-weight:400!important; }
 .financing-article .fm-scrolly .fm-table th.fm-category,
 .financing-article .fm-scrolly .fm-table td.fm-cell { text-align:center!important; }
 .financing-article .fm-scrolly .fm-table td.fm-cell.fm-selected-category { background:#edf7fa!important; }
@@ -104,6 +107,8 @@
  .financing-article .fm-scrolly .fm-table { min-width:0!important; }
  .financing-article .fm-scrolly .fm-table th,
  .financing-article .fm-scrolly .fm-table td { padding:.2rem .1rem!important; }
+ .financing-article .fm-scrolly .fm-table tbody th,
+ .financing-article .fm-scrolly .fm-table tbody td { padding-block:.17rem!important; }
  .financing-article .fm-scrolly .fm-table thead th { height:58px!important; }
  .financing-article .fm-scrolly .fm-table th:nth-child(1) { width:82px!important; }
  .financing-article .fm-scrolly .fm-table th:nth-child(2) { width:82px!important; }
@@ -112,3 +117,5 @@
  .financing-article .fm-scrolly .fm-head p { font-size:.8rem!important; }
 }
 @media(prefers-reduced-motion:reduce) { .fm-scrolly .fm-step,.fm-scrolly .fm-table tbody tr { transition:none; } }
+/* Keep semantic column labels regular weight in embedded article environments. */
+.financing-article .fm-scrolly .fm-table thead tr th[scope="col"] { font-weight:400!important; }

@@ -96,6 +96,7 @@
 .financing-article .fm-scrolly .fm-table button.fm-instrument { -webkit-appearance:none!important; appearance:none!important; border:0!important; padding:0!important; background:transparent!important; box-shadow:none!important; color:#113655!important; font-family:inherit!important; font-size:inherit!important; font-weight:700!important; line-height:1.15!important; text-align:left!important; }
 .financing-article .fm-scrolly .fm-table button.fm-instrument[aria-pressed=true] { text-decoration:underline!important; text-decoration-color:var(--fm-teal)!important; text-underline-offset:3px!important; }
 .financing-article .fm-scrolly .fm-head { display:block!important; width:100%!important; max-width:none!important; text-align:left!important; }
+.financing-article .fm-scrolly header.fm-head::before { content:none!important; display:none!important; }
 .financing-article .fm-scrolly .fm-head h4 { display:block!important; width:100%!important; margin:0 0 .3rem!important; color:#113655!important; font-family:'PT Sans Narrow','Arial Narrow',Arial,sans-serif!important; font-size:1.5rem!important; font-weight:700!important; line-height:1.15!important; }
 .financing-article .fm-scrolly .fm-head p { display:block!important; width:100%!important; margin:0!important; color:#646363!important; font-family:'PT Sans Narrow','Arial Narrow',Arial,sans-serif!important; font-size:.95rem!important; font-weight:400!important; line-height:1.2!important; }
 .financing-article .fm-scrolly .fm-table-scroll { border-top:0!important; }

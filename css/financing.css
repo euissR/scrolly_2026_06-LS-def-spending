@@ -9,22 +9,22 @@
 .fm-scrolly .fm-step:last-child { margin-bottom:0; }
 .fm-scrolly .fm-head h4 { margin:0 0 .3rem; color:#113655; font-size:1.5rem; line-height:1.15; }
 .fm-scrolly .fm-head p { margin:0; color:#646363; font-size:.95rem; }
-.fm-scrolly .fm-focus { background:#edf7fa; color:#113655; border-left:3px solid var(--fm-teal); padding:.6rem; margin:.8rem 0; min-height:2.5rem; font-size:1rem; }
+.fm-scrolly .fm-focus { background:#edf7fa; color:#113655; border-left:3px solid var(--fm-teal); padding:.18rem .6rem; margin:.8rem 0; min-height:2.5rem; font-size:1rem; }
 .fm-scrolly .fm-controls { display:flex; align-items:center; gap:.5rem; margin:0 0 .7rem; font-size:.85rem; color:#646363; }
 .fm-scrolly button { font:inherit; cursor:pointer; }
-.fm-scrolly .fm-reset { border:1px solid #c6c6c6; background:#fff; border-radius:4px; padding:.3rem .5rem; color:#113655; flex-shrink:0; }
+.fm-scrolly .fm-reset { border:1px solid #c6c6c6; background:#fff; border-radius:4px; padding:.09rem .5rem; color:#113655; flex-shrink:0; }
 .fm-scrolly button:focus-visible,.fm-scrolly .fm-table-scroll:focus-visible { outline:3px solid #f28d22; outline-offset:2px; }
 .fm-scrolly .fm-table-scroll { overflow:auto; max-height:62vh; border:1px solid #e5e8ea; scrollbar-width:thin; }
 .fm-scrolly .fm-table { border-collapse:separate; border-spacing:0; width:100%; min-width:650px; table-layout:fixed; font-size:.85rem; line-height:1.2; }
 .fm-scrolly .fm-table tbody { line-height:1.08; }
 .fm-scrolly .fm-table th,.fm-scrolly .fm-table td { padding:.5rem .25rem; border-bottom:1px solid #e5e8ea; vertical-align:middle; text-align:left; }
 .fm-scrolly .fm-table tbody th,.fm-scrolly .fm-table tbody td { padding-block:.425rem; }
-.fm-scrolly .fm-table thead th { position:sticky; top:0; z-index:2; background:#f4f7f8; font-size:12px; font-weight:400; height:78px; }
+.fm-scrolly .fm-table thead th { position:sticky; top:0; z-index:2; background:#f4f7f8; padding-block:.03rem; font-size:12px; font-weight:400; height:24px; }
 .fm-scrolly .fm-table th:nth-child(1) { width:124px; }
 .fm-scrolly .fm-table th:nth-child(2) { width:131px; }
 .fm-scrolly .fm-table th:nth-child(3) { width:116px; }
 .fm-scrolly .fm-table th.fm-category { text-align:center; }
-.fm-scrolly .fm-category button { border:0; background:transparent; color:#113655; padding:.2rem; width:100%; font-weight:700; line-height:1.15; }
+.fm-scrolly .fm-category button { border:0; background:transparent; color:#113655; padding:.04rem .2rem; width:100%; font-weight:700; line-height:1.15; }
 .fm-scrolly .fm-category button[aria-pressed=true] { background:#d5edf4; border-radius:3px; }
 .fm-scrolly .fm-instrument { border:0; padding:0; background:transparent; text-align:left; color:#113655; font-weight:700; line-height:1.15; }
 .fm-scrolly .fm-instrument[aria-pressed=true] { text-decoration:underline; text-decoration-color:var(--fm-teal); text-underline-offset:3px; }
@@ -61,18 +61,18 @@
  .fm-scrolly .fm-step { position:relative; z-index:2; pointer-events:auto; padding:.65rem; background:rgba(255,255,255,.96); box-shadow:0 2px 10px #11365518; }
  .fm-scrolly .fm-head h4 { font-size:1.2rem; }
  .fm-scrolly .fm-head p { font-size:.8rem; }
- .fm-scrolly .fm-focus { font-size:.8rem; line-height:1.2; padding:.3rem; margin:.3rem 0; min-height:0; }
+ .fm-scrolly .fm-focus { font-size:.8rem; line-height:1.2; padding:.09rem .3rem; margin:.3rem 0; min-height:0; }
  .fm-scrolly .fm-controls { margin-bottom:.25rem; font-size:.7rem; }
  .fm-scrolly .fm-table-scroll { flex:1 1 auto; min-height:0; max-height:none; overflow-x:hidden; overflow-y:hidden; }
  .fm-scrolly .fm-table { min-width:0; font-size:.7rem; line-height:1.15; }
  .fm-scrolly .fm-table tbody { line-height:1.035; }
  .fm-scrolly .fm-table th,.fm-scrolly .fm-table td { padding:.2rem .1rem; overflow-wrap:anywhere; }
  .fm-scrolly .fm-table tbody th,.fm-scrolly .fm-table tbody td { padding-block:.17rem; }
- .fm-scrolly .fm-table thead th { height:58px; }
+ .fm-scrolly .fm-table thead th { padding-block:.012rem; height:18px; }
  .fm-scrolly .fm-table th:nth-child(1) { width:82px; }
  .fm-scrolly .fm-table th:nth-child(2) { width:82px; }
  .fm-scrolly .fm-table th:nth-child(3) { width:70px; }
- .fm-scrolly .fm-category button { padding:.1rem 0; font-size:.62rem; }
+ .fm-scrolly .fm-category button { padding:.02rem 0; font-size:.62rem; }
  .fm-scrolly .fm-table small { font-size:.62rem; margin-top:.08rem; }
  .fm-scrolly .fm-period { font-size:.62rem; }
  .fm-scrolly .fm-period svg { height:16px; }
@@ -90,7 +90,8 @@
 .financing-article .fm-scrolly .fm-table td { display:table-cell!important; padding:.5rem .25rem!important; border:0!important; border-bottom:1px solid #e5e8ea!important; color:inherit!important; background:#fff!important; font-family:inherit!important; font-size:inherit!important; line-height:inherit!important; text-align:left!important; text-transform:none!important; vertical-align:middle!important; }
 .financing-article .fm-scrolly .fm-table tbody th,
 .financing-article .fm-scrolly .fm-table tbody td { padding-block:.425rem!important; }
-.financing-article .fm-scrolly .fm-table thead th { position:sticky!important; top:0!important; z-index:2!important; height:78px!important; background:#f4f7f8!important; font-size:12px!important; font-weight:400!important; }
+.financing-article .fm-scrolly .fm-table thead th { position:sticky!important; top:0!important; z-index:2!important; height:24px!important; padding-block:.03rem!important; background:#f4f7f8!important; font-size:12px!important; font-weight:400!important; }
+.financing-article .fm-scrolly .fm-table thead .fm-category button { padding-block:.04rem!important; }
 .financing-article .fm-scrolly .fm-table thead .fm-category button { font-weight:400!important; }
 .financing-article .fm-scrolly .fm-table th.fm-category,
 .financing-article .fm-scrolly .fm-table td.fm-cell { text-align:center!important; }
@@ -109,7 +110,8 @@
  .financing-article .fm-scrolly .fm-table td { padding:.2rem .1rem!important; }
  .financing-article .fm-scrolly .fm-table tbody th,
  .financing-article .fm-scrolly .fm-table tbody td { padding-block:.17rem!important; }
- .financing-article .fm-scrolly .fm-table thead th { height:58px!important; }
+ .financing-article .fm-scrolly .fm-table thead th { height:18px!important; padding-block:.012rem!important; }
+ .financing-article .fm-scrolly .fm-table thead .fm-category button { padding-block:.02rem!important; }
  .financing-article .fm-scrolly .fm-table th:nth-child(1) { width:82px!important; }
  .financing-article .fm-scrolly .fm-table th:nth-child(2) { width:82px!important; }
  .financing-article .fm-scrolly .fm-table th:nth-child(3) { width:70px!important; }

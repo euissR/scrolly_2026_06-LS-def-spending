@@ -6,7 +6,6 @@ export function makeCoverageMatrix(el, { rows, id }) {
   const sourceColors = {'EU':theme.teal, 'MSs':theme.egg, 'Multilateral/intergovernmental':theme.teal3, 'Private funding':theme.fuchsia, 'NATO':theme.teal2};
   const label = {'industrial production':'Industrial production', procurement:'Procurement', 'infrastructure and logistics':'Infrastructure & logistics', 'external assistance':'External assistance', 'R&D':'R&D'};
   el.innerHTML = `<header class="fm-head"><h4 id="${id}-title">Where defence finance can help</h4><p>Instrument totals, funding periods and areas covered</p></header>
-    <p class="fm-focus" aria-live="polite"></p>
     <div class="fm-controls"><button type="button" class="fm-reset">Show all rows</button><span> Select an area to compare coverage</span></div>
     <div class="fm-table-scroll" tabindex="0" role="region" aria-label="Coverage matrix; scroll sideways on small screens"><table class="fm-table"><caption class="fm-sr">Funding and category coverage. Dots indicate coverage, not allocated amounts.</caption><thead></thead><tbody></tbody></table></div>
     <p class="fm-note">Funding circle area is proportional to € billions; the same €150bn scale applies throughout. Grey lines show funding periods.<br>● Area covered · — Coverage not listed. Amounts are instrument totals, not allocations to each area. Financing types and periods differ; totals should not be added together.</p>`;
@@ -55,8 +54,6 @@ export function makeCoverageMatrix(el, { rows, id }) {
     tr.select('.fm-instrument').attr('aria-pressed',d=>String(!selectedCategory && high.includes(d.name)));
     heads.selectAll('.fm-category button').attr('aria-pressed',c=>String(c===selectedCategory));
     table.selectAll('.fm-cell').classed('fm-selected-category',c=>c.category===selectedCategory);
-    const chosen=rows.filter(d=>high.includes(d.name));
-    el.querySelector('.fm-focus').textContent = selectedCategory ? `${label[selectedCategory]} · ${rows.filter(d=>d.categories.includes(selectedCategory)).length} instruments in this section` : chosen.length === 1 ? `${chosen[0].name} · ${chosen[0].display} · ${chosen[0].time || 'Period not specified'}` : `${rows.length} instruments · compare their coverage`;
   }
   el.querySelector('.fm-reset').addEventListener('click',()=>{state={highlight:[]};selectedCategory=null;renderState();});
   renderState();

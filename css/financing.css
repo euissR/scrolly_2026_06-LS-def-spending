@@ -9,8 +9,7 @@
 .fm-scrolly .fm-step:last-child { margin-bottom:0; }
 .fm-scrolly .fm-head h4 { margin:0 0 .3rem; color:#000000; font-size:1.5rem; line-height:1.15; }
 .fm-scrolly .fm-head p { margin:0; color:#646363; font-size:.95rem; }
-.fm-scrolly .fm-focus { background:#edf7fa; color:#113655; border-left:3px solid var(--fm-teal); padding:.18rem .6rem; margin:.8rem 0; min-height:2.5rem; font-size:1rem; }
-.fm-scrolly .fm-controls { display:flex; align-items:center; gap:.5rem; margin:0 0 .7rem; font-size:.85rem; color:#646363; }
+.fm-scrolly .fm-controls { display:flex; align-items:center; gap:.5rem; margin-bottom: .7rem; margin-top: .7rem; font-size:.85rem; color:#646363; }
 .fm-scrolly button { font:inherit; cursor:pointer; }
 .fm-scrolly .fm-reset { border:1px solid #c6c6c6; background:#fff; border-radius:4px; padding:.09rem .5rem; color:#113655; flex-shrink:0; }
 .fm-scrolly button:focus-visible,.fm-scrolly .fm-table-scroll:focus-visible { outline:3px solid #f28d22; outline-offset:2px; }
@@ -61,8 +60,7 @@
  .fm-scrolly .fm-step { position:relative; z-index:2; pointer-events:auto; padding:.65rem; background:rgba(255,255,255,.96); box-shadow:0 2px 10px #11365518; }
  .fm-scrolly .fm-head h4 { font-size:1.2rem; }
  .fm-scrolly .fm-head p { font-size:.8rem; }
- .fm-scrolly .fm-focus { font-size:.8rem; line-height:1.2; padding:.09rem .3rem; margin:.3rem 0; min-height:0; }
- .fm-scrolly .fm-controls { margin-bottom:.25rem; font-size:.7rem; }
+ .fm-scrolly .fm-controls { margin-bottom:.25rem; margin-top:.25rem; font-size:.7rem; }
  .fm-scrolly .fm-table-scroll { flex:1 1 auto; min-height:0; max-height:none; overflow-x:hidden; overflow-y:hidden; }
  .fm-scrolly .fm-table { min-width:0; font-size:.7rem; line-height:1.15; }
  .fm-scrolly .fm-table tbody { line-height:1.035; }

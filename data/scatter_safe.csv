@@ -1,26 +1,26 @@
 pair_id,x,y,name,category,source,val,value_known,time,shape,size,val_display,time_display,highlight,color_key
-P1,Instrument,-1,SAFE,procurement,EU,150,TRUE,2025-2030,instrument,150,€150 bn,2025-2030,highlight,EU
-P10,Instrument,-6,EDIP,external assistance,EU,1.5,TRUE,2026-27,instrument,1.5,€1.5 bn,2025-27,dim,dim
-P11,Instrument,-7,EPF,external assistance,EU,17,TRUE,2021-27,instrument,17,€17 bn,2021-27,dim,dim
-P12,Instrument,-8,CEF,infrastructure and logistics,EU,1.7,TRUE,2021-27,instrument,1.7,€1.7 bn,2021-27,dim,dim
-P13,Instrument,-9,EIC,R&D,EU,0.734,TRUE,2026,instrument,0.734,€0.734 bn,2026,dim,dim
-P14,Instrument,-10,Cohesion Funds,R&D,EU,11.9,TRUE,2021-27,instrument,11.9,€11.9 bn,2021-27,dim,dim
-P15,Instrument,-10,Cohesion Funds,industrial production,EU,11.9,TRUE,2021-27,instrument,11.9,€11.9 bn,2021-27,dim,dim
-P16,Instrument,-10,Cohesion Funds,infrastructure and logistics,EU,11.9,TRUE,2021-27,instrument,11.9,€11.9 bn,2021-27,dim,dim
-P17,Instrument,-11,EIB,R&D,EU,4,TRUE,2025,instrument,4,€4 bn,2025,dim,dim
-P18,Instrument,-11,EIB,infrastructure and logistics,EU,4,TRUE,2025,instrument,4,€4 bn,2025,dim,dim
-P19,Instrument,-11,EIB,industrial production,EU,4,TRUE,2025,instrument,4,€4 bn,2025,dim,dim
-P2,Instrument,-1,SAFE,infrastructure and logistics,EU,150,TRUE,2025-2030,instrument,150,€150 bn,2025-2030,highlight,EU
-P3,Instrument,-2,Ukraine Support loan,external assistance,EU,90,TRUE,2026-2027,instrument,90,€90 bn,2026-2027,dim,dim
-P34,Instrument,-16,NATO Innovation Fund,R&D,NATO,1,TRUE,2023-2038,instrument,1,€1 bn,2023-2038,dim,dim
-P35,Instrument,-17,NATO DIANA,R&D,NATO,0.011,TRUE,2025,instrument,0.011,€0.011 bn,2025,dim,dim
-P4,Instrument,-3,EDF,R&D,EU,7.3,TRUE,2021-27,instrument,7.3,€7.3 bn,2021-27,dim,dim
-P5,Instrument,-4,ASAP,industrial production,EU,0.5,TRUE,2023-25,instrument,0.5,€0.5 bn,2023-25,dim,dim
-P6,Instrument,-5,EDIRPA,procurement,EU,0.31,TRUE,2023-25,instrument,0.31,€0.31 bn,2023-25,dim,dim
-P99,Instrument,-6,AGILE,R&D,EU,0.115,TRUE,2027,instrument,0.115,€0.115 bn,2027,dim,dim
-P7,Instrument,-6,EDIP,industrial production,EU,1.5,TRUE,2026-27,instrument,1.5,€1.5 bn,2025-27,dim,dim
-P8,Instrument,-6,EDIP,procurement,EU,1.5,TRUE,2026-27,instrument,1.5,€1.5 bn,2025-27,dim,dim
-P9,Instrument,-6,EDIP,R&D,EU,1.5,TRUE,2026-27,instrument,1.5,€1.5 bn,2025-27,dim,dim
+P1,Instrument,-1,SAFE,procurement,EU,150,TRUE,2025-2030,instrument,150,150,2025-2030,highlight,EU
+P10,Instrument,-6,EDIP,external assistance,EU,1.5,TRUE,2026-27,instrument,1.5,1.5,2025-27,dim,dim
+P11,Instrument,-7,EPF,external assistance,EU,17,TRUE,2021-27,instrument,17,17,2021-27,dim,dim
+P12,Instrument,-8,CEF,infrastructure and logistics,EU,1.7,TRUE,2021-27,instrument,1.7,1.7,2021-27,dim,dim
+P13,Instrument,-9,EIC,R&D,EU,0.734,TRUE,2026,instrument,0.734,0.734,2026,dim,dim
+P14,Instrument,-10,Cohesion Funds,R&D,EU,11.9,TRUE,2021-27,instrument,11.9,11.9,2021-27,dim,dim
+P15,Instrument,-10,Cohesion Funds,industrial production,EU,11.9,TRUE,2021-27,instrument,11.9,11.9,2021-27,dim,dim
+P16,Instrument,-10,Cohesion Funds,infrastructure and logistics,EU,11.9,TRUE,2021-27,instrument,11.9,11.9,2021-27,dim,dim
+P17,Instrument,-11,EIB,R&D,EU,4,TRUE,2025,instrument,4,4,2025,dim,dim
+P18,Instrument,-11,EIB,infrastructure and logistics,EU,4,TRUE,2025,instrument,4,4,2025,dim,dim
+P19,Instrument,-11,EIB,industrial production,EU,4,TRUE,2025,instrument,4,4,2025,dim,dim
+P2,Instrument,-1,SAFE,infrastructure and logistics,EU,150,TRUE,2025-2030,instrument,150,150,2025-2030,highlight,EU
+P3,Instrument,-2,Ukraine Support loan,external assistance,EU,90,TRUE,2026-2027,instrument,90,90,2026-2027,dim,dim
+P34,Instrument,-16,NATO Innovation Fund,R&D,NATO,1,TRUE,2023-2038,instrument,1,1,2023-2038,dim,dim
+P35,Instrument,-17,NATO DIANA,R&D,NATO,0.011,TRUE,2025,instrument,0.011,0.011,2025,dim,dim
+P4,Instrument,-3,EDF,R&D,EU,7.3,TRUE,2021-27,instrument,7.3,7.3,2021-27,dim,dim
+P5,Instrument,-4,ASAP,industrial production,EU,0.5,TRUE,2023-25,instrument,0.5,0.5,2023-25,dim,dim
+P6,Instrument,-5,EDIRPA,procurement,EU,0.31,TRUE,2023-25,instrument,0.31,0.31,2023-25,dim,dim
+P99,Instrument,-6,AGILE,R&D,EU,0.115,TRUE,2027,instrument,0.115,0.115,2027,dim,dim
+P7,Instrument,-6,EDIP,industrial production,EU,1.5,TRUE,2026-27,instrument,1.5,1.5,2025-27,dim,dim
+P8,Instrument,-6,EDIP,procurement,EU,1.5,TRUE,2026-27,instrument,1.5,1.5,2025-27,dim,dim
+P9,Instrument,-6,EDIP,R&D,EU,1.5,TRUE,2026-27,instrument,1.5,1.5,2025-27,dim,dim
 P1,Category,-3,procurement,procurement,EU,150,TRUE,NA,category,2,,,highlight,EU
 P10,Category,-9,external assistance,external assistance,EU,1.5,TRUE,NA,category,2,,,dim,dim
 P11,Category,-9,external assistance,external assistance,EU,17,TRUE,NA,category,2,,,dim,dim

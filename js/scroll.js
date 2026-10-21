@@ -5,6 +5,8 @@
 const mobile = matchMedia("(max-width: 768px)");
 
 export function scrollEngine(steps, onStep) {
+  if (!steps.length) return;
+
   let current = null;
   let ticking = false;
 

@@ -20,7 +20,7 @@ export function makeCoverageMatrix(el, { rows, id }) {
   el.innerHTML = `<header class="fm-head"><h4 id="${id}-title">Where defence finance can help</h4><p>Instrument totals, funding periods and areas covered</p></header>
     <div class="fm-controls"><button type="button" class="fm-reset">Show all rows</button><span> Select an area to compare coverage</span></div>
     <div class="fm-table-scroll" tabindex="0" role="region" aria-label="Coverage matrix; scroll sideways on small screens"><table class="fm-table"><caption class="fm-sr">Funding and category coverage. Dots indicate coverage, not allocated amounts.</caption><thead></thead><tbody></tbody></table></div>
-    <p class="fm-note">Funding circle area is proportional to € billions; the same €150bn scale applies throughout. Grey lines show funding periods.<br>● Area covered · — Coverage not listed. Amounts are instrument totals, not allocations to each area. Financing types and periods differ; totals should not be added together.</p>`;
+    <p class="fm-note">● Area covered · — Coverage not listed. Amounts are instrument totals, not allocations to each area. Financing types and periods differ; totals should not be added together.</p>`;
   const table = d3.select(el.querySelector("table"));
   let state = { highlight: [] },
     selectedCategory = null;
